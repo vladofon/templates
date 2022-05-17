@@ -52,6 +52,11 @@ public:
       return array_temp_[index];
    }
 
+   int operator()(void) const
+   {
+      return get_current_size();
+   }
+
    E* get_array_temp() const
    {
       return array_temp_;
